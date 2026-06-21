@@ -112,7 +112,7 @@ let flatArr4 = arr14.flat(Infinity);
 console.log(`flatArr4 = ${flatArr4}`); // flatArr4 = [1,2,3,4,5,6,7,8,9]
 
 
-// Array.isArray() - 
+// Array.isArray() - Determines whether the passed value is an array. It returns true if the value is an array, and false if it is not.
 let arr15 = [1, 2, 3, 4];
 let str = "Girija";
 
@@ -121,10 +121,10 @@ let isArr2 = Array.isArray(str);
 console.log(`isArr1 = ${isArr1}\nisArr2 = ${isArr2}`); // isArr1 = true   // isArr2 = false
 
 
-// Array.from()
+// Array.from() - It is primarily used to convert non-array structures into actual arrays.
 let fromArr = Array.from(str);
 console.log(`formArr = ${fromArr}`); // formArr = G,i,r,i,j,a
 
-// Array.of()
+// Array.of() - creates a new Array instance from a variable number of arguments, regardless of how many arguments there are or what type they are.
 let ofArr = Array.of(arr15, str);
 console.log(`ofArr = ${ofArr}`); // ofArr = 1,2,3,4,Girija
