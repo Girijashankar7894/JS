@@ -54,9 +54,128 @@ let obj = {
     d: "dog"
 };
 for(const objKey in obj) {
-    console.log(obj[objKey]);
-    
+    console.log(obj[objKey]);   
 }
 
 
-// for each
+// for each loop: it have 3 arguments. i.e- element, index, originalArray.
+// display all elements present in an array
+let fruit2 = ["apple", "orange", "banana", "pineapple"];
+
+// process-1
+fruit2.forEach(function (fruitName) {
+    console.log(fruitName);
+});
+
+// process-2
+fruit2.forEach((fruitName) => {
+    console.log(fruitName);
+});
+
+// process-3
+function funReference(fruitName) {
+    console.log(fruitName);
+}
+fruit2.forEach(funReference); // by using function reference not calling the function.
+
+
+// display all elements present in an array including their index number and original array.
+fruit2.forEach((fruitName, fruitIndex, fruits) => {
+    console.log(`${fruitName} is present at ${fruitIndex} position on ${fruits} array`);
+});
+
+// display all object present in an array
+let arrObj = [
+    {
+        id: 1,
+        username: "girija",
+        password: "Pass@1"
+    },
+    {
+        id: 2,
+        username: "shankar",
+        password: "Pass@12"
+    },
+    {
+        id: 3,
+        username: "mahal",
+        password: "Pass@123"
+    }
+];
+
+arrObj.forEach((element) => {
+    console.log(element);
+});
+
+// N.B.: forEach() does not return any type of value
+
+// filter()
+let price = [99, 49, 69, 29];
+let filterPrice = price.filter( (pr) => (pr >= 50) );
+console.log(filterPrice);
+
+let productDetails = [
+    {
+        productID: 1,
+        productName: "shoes",
+        category: "men",
+        price: 999,
+        rating: 4
+    },
+    {
+        productID: 2,
+        productName: "ear ring",
+        category: "women",
+        price: 99,
+        rating: 5
+    },
+    {
+        productID: 3,
+        productName: "lipstick",
+        category: "women",
+        price: 299,
+        rating: 3.9
+    },
+    {
+        productID: 4,
+        productName: "sunglass",
+        category: "men",
+        price: 799,
+        rating: 4.5
+    },
+    {
+        productID: 5,
+        productName: "shoes",
+        category: "women",
+        price: 1099,
+        rating: 3.5
+    },
+    {
+        productID: 6,
+        productName: "kurtis",
+        category: "women",
+        price: 999,
+        rating: 4.9
+    },
+    {
+        productID: 7,
+        productName: "bodylotion",
+        category: "bisexual",
+        price: 149,
+        rating: 4.2
+    },
+    {
+        productID: 8,
+        productName: "computer glass",
+        category: "women",
+        price: 899,
+        rating: 5
+    },
+];
+// let productFilter = productDetails.filter( (pr) => (pr.category === "men") );
+// let productFilter = productDetails.filter( (pr) => (pr.price <= 500) );
+let productFilter = productDetails.filter( (pr) => ((pr.price >= 500) && (pr.category === "women")) );
+console.log(productFilter);
+
+
+// map()
