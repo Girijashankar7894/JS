@@ -179,3 +179,31 @@ console.log(productFilter);
 
 
 // map()
+let arrMap = [10, 20, 30, 40];
+let updatedArr = arrMap.map( (am) => (am + 1) );
+
+console.log(updatedArr);
+
+
+
+// calculate the all product price after GST
+let updatedProductDetails = productDetails.map( (em) => {
+    let newObj = {
+        productName: em.productName,
+        "price after GST": (em.price + (em.price * 18 / 100))
+    };
+    return newObj;
+} );
+
+console.log(updatedProductDetails);
+
+
+// reduce()
+let reduceArr = [10, 12, 15, 18, 20];
+let afterReduceArray = reduceArr.reduce( (previousValue, currentValue) => (previousValue + currentValue), 0 );
+console.log(afterReduceArray);
+
+
+// calculate the total product price
+let totalPrice = productDetails.reduce( (previousValue, currentValue) => (previousValue + currentValue.price), 0 );
+console.log(`Total Price = ${totalPrice}`);
