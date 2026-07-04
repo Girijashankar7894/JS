@@ -99,7 +99,7 @@ let child = document.querySelector("li");
 
 //  create new element in dom
 const h2 = document.createElement("h2");
-console.log(h2);
+// console.log(h2);
 
 // add attributes by using inbuilt key of attribute.
 h2.id = Math.floor(Math.random() * (99-10) + 10);
@@ -119,3 +119,23 @@ h2.appendChild(text);
 
 // add element inside the document.
 document.body.appendChild(h2);
+
+
+// Edit or replace content inside an element
+let li = document.querySelector("li");
+
+// replace content
+// li.innerText = "Contact";
+// li.textContent = "Contact"
+// li.innerHTML = "Contact"
+
+/* let newLi = document.createElement("li");
+newLi.appendChild(document.createTextNode("Contact"));
+li.replaceWith(newLi); */
+
+// add content with exiting content
+li.nextElementSibling.appendChild(document.createTextNode(" Us"));
+
+
+// remove content
+// li.remove();
