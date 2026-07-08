@@ -1,3 +1,6 @@
+"use strict"
+
+// Process-01 script
 const inputs = document.querySelectorAll(".inputFiled");
 const button = document.querySelector("#calculate");
 
