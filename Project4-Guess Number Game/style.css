@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(45deg, white, black);
+    display: grid;
+    place-content: center;
+    text-align: center;
+
+    form {
+        margin: 1.5rem;
+        display: grid;
+        gap: 0.5rem;
+        place-content: center;
+        
+        label {
+            font-size: 1.5rem;
+            font-weight: 900;
+        }
+
+        input {
+            padding: 5px;
+            font-weight: 900;
+            font-size: 1rem;
+            border: none;
+            border-radius: 5px;
+            outline: none;
+            width: 200px;
+        }
+
+        input[type="submit"] {
+            background: linear-gradient(45deg, black, white);
+        }
+        
+        input[type="submit"]:hover {
+            background: linear-gradient(225deg, black, white);        
+            cursor: pointer;
+        }
+
+        input[type="submit"]:active {
+            scale: 0.9;
+        }
+    }
+
+
+}
