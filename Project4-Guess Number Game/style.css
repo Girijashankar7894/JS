@@ -8,7 +8,7 @@
 body {
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(45deg, white, black);
+    background: linear-gradient(45deg, white, lightblue);
     display: grid;
     place-content: center;
     text-align: center;
@@ -32,14 +32,15 @@ body {
             border-radius: 5px;
             outline: none;
             width: 200px;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
         }
 
         input[type="submit"] {
-            background: linear-gradient(45deg, black, white);
+            background: linear-gradient(45deg, lightblue, white);
         }
         
         input[type="submit"]:hover {
-            background: linear-gradient(225deg, black, white);        
+            background: linear-gradient(225deg, lightblue, white);        
             cursor: pointer;
         }
 
