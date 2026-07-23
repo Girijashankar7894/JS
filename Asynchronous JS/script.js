@@ -19,20 +19,22 @@ const resetButton = document.getElementById("reset");
 let i = 0;
 let interval;
 
-
-
 const startInterval = () => {
-    interval = setInterval(() => {
-        h1.innerHTML = `${i++}`
-    }, 1000);
+    if(!interval) {
+        interval = setInterval(() => {
+            h1.innerHTML = `${i++}`
+        }, 1000);
+    }
 };
 
 const stopInterval = () => {
     clearInterval(interval);
+    interval = null;
 };
 
 const resetInterval = () => {
     clearInterval(interval);
+    interval = null;
     h1.innerHTML = 0;
     i = 0;
 };

@@ -16,7 +16,7 @@ const randomColor = () => {
 };
 
 setInterval(() => {
-    // rgb color
+    // rgb color 
     // let backgroundColor = `rgb(${color()}, ${color()}, ${color()})`;
     // body.style.background = backgroundColor;
         
