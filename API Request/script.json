@@ -1,0 +1,12 @@
+{
+    "name": "Shankar",
+    "age": 26,
+    "language": ["C-Programming", "C++", "Java", "Rust", "JavaScript"],
+    "address": {
+        "at": "Sergarh",
+        "post": "Sergarh",
+        "dist": "Balasore",
+        "state": "Odisha",
+        "pinCode": 756060
+    }
+}
