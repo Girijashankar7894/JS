@@ -2,7 +2,7 @@
 
 // export username
 export let userName = "shankar123";
-let password = "Pass@123";
+export let password = "Pass@123";
 
 // export validate function
 export function validate() {
