@@ -1,5 +1,6 @@
 "use strict"
 
+// promise
 // Syntax or Process - 01
 const promiseOne = new Promise((resolve, reject) => {
 

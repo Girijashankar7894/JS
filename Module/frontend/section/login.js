@@ -3,7 +3,7 @@
 // rename import data by using 'as' keyword
 import { userName as uName, password as uPass } from "./signup.js";
 
-let userName = "girija01";
+export let userName = "shankar123";
 let password = "Pass@123"
 
 // export checker function
