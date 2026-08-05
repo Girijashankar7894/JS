@@ -1,5 +1,10 @@
 "use strict"
 
+// create a default function
+export default function() {
+    console.log(`Default function of signup section`);
+}
+
 // export username
 export let userName = "shankar123";
 export let password = "Pass@123";
