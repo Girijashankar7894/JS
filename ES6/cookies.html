@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookies</title>
+</head>
+<body>
+    
+    <script>
+        // add cookies name and value
+        document.cookie = "item = Saree";
+
+        // add another cookies name-value, expires, path, secure, samesite
+        document.cookie = "itemName=Cake; Expires=Thu, 20 Aug 2026 12:00:00 UTC; Path=/ES6; Secure; SameSite = lax";
+
+        // delete cookies: for delete a cookies you can put the backdate value at expires properties.
+        // document.cookie = "itemName=Cake; Expires=Thu, 19 Aug 2026 12:00:00 UTC";
+    </script>
+
+</body>
+</html>

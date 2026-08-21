@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Storage</title>
+</head>
+<body>
+    
+    <script>
+        // local storage
+        // set items in local storage
+        localStorage.setItem("userName", "shankar123");
+        localStorage.setItem("passWord", "Pass@123");
+
+        // get items in local storage
+        console.log(localStorage.getItem("userName"));
+
+        // remove items in local storage
+        localStorage.removeItem("passWord");
+
+        // count how many items store inside the local storage
+        console.log(localStorage.length);
+
+        // find the item's key name in local storage by using index number
+        console.log(localStorage.key(0));
+
+        // clear all keys in the local storage
+        // localStorage.clear();
+        
+
+
+        // sessional storage
+        // set items in session storage
+        sessionStorage.setItem("userName", "shankar123");
+        sessionStorage.setItem("passWord", "Pass@123");
+
+        // get items in session storage
+        console.log(sessionStorage.getItem("userName"));
+
+        // remove items in session storage
+        sessionStorage.removeItem("passWord");
+
+        // count how many items store inside the session storage
+        console.log(sessionStorage.length);
+
+        // find the item's key name in session storage by using index number
+        console.log(sessionStorage.key(0));
+
+        // clear all keys in the session storage
+        // sessionStorage.clear();
+    </script>
+
+</body>
+</html>
